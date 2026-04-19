@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --old-text-color: #6E503C;
+    --link-color: #ac4418;
+}
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 2rem;
+}
+body{
+    background-color: #e4b04a;
+}
+html{
+    background-color: #e4b04a;
+}

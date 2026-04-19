@@ -1,0 +1,177 @@
+.library-container {
+    padding: 2.5rem;
+    background-color: #ca844a;
+}
+
+.library-title h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    color: #6E320A;
+    font-family: "Cinzel", serif;
+    margin-bottom: 2rem;
+}
+.library-title h1 {
+  text-align:center;
+  line-height:1.5em;
+  padding-bottom:45px;
+  letter-spacing: 2px;
+}
+.library-title h1:before {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 60%;
+  left:50%;
+  margin-left:-30%;
+  height: 1px;
+  content: "";
+  background-color: #6E320A;
+  z-index: 4;
+}
+.library-title h1:after {
+  position:absolute;
+  width:40px;
+  height:40px;
+  left:50%;
+  margin-left:-20px;
+  color: #6E320A;
+  bottom:0px;
+  content: '\00a7';
+  font-size: 3rem;
+  line-height:40px;
+  font-weight:400;
+  background-color: #ca844a;
+  z-index: 5;
+  display:block;
+}
+
+.religion-section.accordion-item{
+    padding: 10px;
+    margin: 1.5rem 2rem;
+    background-color: #6E320A;
+    padding: 2.5rem;
+    border-radius: 25px;
+    border: 3px solid goldenrod;
+    corner-shape: scoop;
+}
+.accordion-button:not(.collapsed){
+    background-color: unset;
+    box-shadow: unset;
+}
+.accordion-button{
+    background-color: unset;
+    box-shadow: unset;
+    margin:0;
+    padding: 0;
+}
+.accordion-button::after {
+  all: revert !important;
+}
+.accordion-button.collapsed::before {
+    padding-bottom: 3px;
+    /* border: 1px solid #EFBF04; */
+    width: 40px;
+    font-size: 2rem;
+    color: #EFBF04;
+    content: "+"; 
+    transition: unset;
+    transition: unset;
+}
+.accordion-button:not(.collapsed)::before {
+    padding-bottom: 3px;
+    /* border: 1px solid #EFBF04; */
+    width: 40px;
+    font-size: 2rem;
+    color: #EFBF04;
+    content: "-"; 
+    transition: unset;
+    transition: unset;
+}
+
+.religion-section h2{
+    font-family: "Cinzel", serif;
+    color: #EFBF04;
+    letter-spacing: 1px;
+    border-left: #EFBF04 3px solid;
+    padding-left: 1rem;
+    margin: 0 !important;
+}
+.books-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.library-book{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    border: 1px solid #ca844a;
+    border-left: 4px solid #ca844a;
+    padding: 0.5rem;
+    border-radius: 3px 6px 6px 3px;
+    background-color: #e4b04a;
+}
+.book-name{
+    text-align: center;
+    border-bottom: 1px solid #6E320A;
+    padding-bottom: 7px ;
+}
+.read-btn-section{
+    border-top: 1px solid #ca844a;
+    margin-top: auto;
+    text-align: center;
+    
+}
+.read-book{
+    color: var(--link-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 1127px) {
+    .religion-section.accordion-item{
+        margin: 0.5rem 0;
+        padding: 1.5rem;
+    }
+    .library-container {
+        margin: 0;
+        padding: 1rem 0;
+    }
+    .religion-section{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 680px) {
+    .library-container {
+        margin: 0;
+        padding: 1rem 0;
+    }
+    .library-book{
+        display: flex;
+        flex-direction: column;
+        height: 225px;
+        width: 100%;
+        border-radius: 6px;
+    }
+    .books-section{
+        gap: 0.1;
+        padding: 0;
+    }
+}
+
+@media (max-width: 320px){
+    .books-section{
+    }
+    .religion-section.accordion-item{
+        
+        padding: 0.5rem;
+    }
+}

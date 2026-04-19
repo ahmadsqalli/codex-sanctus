@@ -1,0 +1,33 @@
+/* .edition{
+    padding: 2rem 5rem;
+    background-color: #6E320A;
+    color: #EFBF04;
+    font-family: "Cinzel", serif;
+} */
+
+.edition{
+    width: 35%;
+    padding: 2rem;
+    color: #EFBF04;
+    background-color: #6E320A;
+    font-family: "Cinzel", serif;
+    border: 3px solid goldenrod;
+    corner-shape: scoop;
+    border-radius: 1rem;
+}
+@media (max-width: 280px) {
+    .edition{
+        padding: 2.5rem 0.5rem;
+    }
+}
+
+.edition_info{
+    margin-top: 1rem;
+    background-color: #e4b04a;
+    color: #6E320A;
+    padding:5px;
+    border-radius: 0.5rem;
+    font-family: Georgia;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}

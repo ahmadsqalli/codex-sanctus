@@ -1,0 +1,418 @@
+.home-page{
+    margin: 0;
+    padding: 0;
+    background-color: #ca844a;
+}
+
+.home-page a {
+    color: #ac4418;
+    font-weight: 600;
+}
+
+/* page hero */
+
+.codex-hero{
+    background-color: black;
+}
+.codex-container{
+    width: 1370px;
+    min-height: 600px;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: black;
+    margin: auto;
+    background-image: url('../assets/images/Saint_Jerome.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.hero-left {
+    padding: 1rem;
+    width: 371px;
+    border-left: 3px solid var(--link-color);
+    color: var(--link-color);
+    font-family: "Cinzel", serif;
+}
+.hero-left h1 {
+    font-size: 2rem;
+}
+.hero-left h3 {
+    font-size: 1.7rem;
+}
+
+@media (max-width: 1330px) {
+    .codex-container{
+        width: 100%;
+        min-height: 600px;
+        max-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        margin: auto;
+        background-image: url('../assets/images/Saint_Jerome.jpg');
+        background-position: 70% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .hero-left {
+        background-color: rgba(0, 0, 0, 0.8);
+        letter-spacing: 2px;
+        text-align: center;
+        box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.8);
+    }
+}
+
+/* ----- sections ----- */
+
+/* ----- section 1, OM ----- */
+
+.section-om{
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.right-om{
+    width: 550px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('../assets/images/om.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    border: 2px solid #ac4418;
+    font-family: Georgia;
+}
+.right-om p{
+    background-color: #e4b04a;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.left-om{
+    font-family: "Cinzel", serif;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .section-om{
+        margin: 3rem auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .left-om{
+        margin-bottom: 3rem;
+        padding: 1rem;
+    }
+    .right-om{
+        width: 100%;
+        max-width: 550px;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-image: url('../assets/images/om.jpg');
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    .right-om p{
+        width: 100%;
+        width: 500px;
+    }
+}
+
+
+/* ----- section 2, XX ----- */
+
+.section-quran{
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right-quran{
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Cinzel", serif;
+    font-weight: bold;
+}
+.left-quran{
+    text-align: center;
+    width: 524px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url('../assets/images/quran.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 2px solid #ac4418;
+    border-radius: 0.5rem;
+    font-family: Georgia;
+}
+.right-quran h1{
+    background-color: #e4b04a;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: 3px;
+}
+.left-quran p{
+    background-color: #e4b04a;
+    width: 95%;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+    .section-quran{
+        margin: 3rem auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .right-quran{
+        height: 150px;
+    }
+    .left-quran{
+        text-align: center;
+        width: 100%;
+        max-width: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-quran h2{
+        background-color: transparent;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        margin: 3px;
+    }
+    .right-quran p{
+        background-color: #e4b04a;
+        width: 90%;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+}
+
+/* ----- section 3 lu ----- */
+
+.section-lu{
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right-lu{
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url('../assets/images/Zhang_Lu.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    border: 2px solid #ac4418;
+    border-radius: 0.5rem;
+    font-family: "Cinzel", serif;
+    font-weight: bold;
+}
+.right-lu *{
+    background-color: #e4b04a;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+.left-lu{
+    text-align: center;
+    width: 524px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: Georgia;
+}
+
+.left-lu p{
+    background-color: #e4b04a;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+    .section-lu{
+        padding-top: 2rem;
+        margin: 3rem auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .left-lu{
+        text-align: center;
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+        margin: 3rem 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-lu p{
+        width: 100%;
+    }
+}
+
+
+/* ----- section 4, jseus ----- */
+
+.section-proverb{
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left-proverb{
+    text-align: center;
+    width: 524px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url('../assets/images/Bloch-SermonOnTheMount.jpg');
+    background-position: -450% 50%;
+    background-repeat: no-repeat;
+    border: 2px solid #ac4418;
+    border-radius: 0.5rem;
+    font-family: Georgia;
+}
+.left-proverb p{
+    background-color: #e4b04a;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    width: 80%;
+    max-width: 420px;
+}
+.right-proverb{
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Georgia;
+}
+.right-proverb p{
+    background-color: #e4b04a;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+
+@media (max-width: 1024px) {
+    .section-proverb{
+        margin: 3rem auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .left-proverb{
+        text-align: center;
+        width: 100%;
+        max-width: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: left;
+    }
+    .left-proverb p{
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        margin: 3px;
+        width: 100%;
+    }
+    .right-proverb {
+        margin: 0;
+        margin-top: 2.5rem;
+        height: auto;
+    }
+    .right-proverb p{
+        background-color: #e4b04a;
+        width: 90%;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+}
+
+
+/* ----- home enter ------ */
+
+.home-enter{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background-color: #ac4418;
+}
+.home-enter::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('../assets/images/library.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+    background-color: #ac4418;
+}
+
+.home-enter a{
+    background-color: #e4b04a;
+    padding: 0.5rem 4rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    border: 2px solid #ac4418;
+}
+.home-enter ::before{
+    background-color: #ac4418;
+}

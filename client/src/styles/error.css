@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.error_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ca844a;
+    color: #6E320A;
+    font-family: "Cinzel", serif;
+}
+.error_page_buttons{
+    margin-top: 3rem;
+}
+
+.error_page_button{
+    margin-top: 3rem;
+    padding: 10px 20px;
+    background-color: #6E320A;
+    color: #EFBF04;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+.error_page_button{
+    margin-top: 3rem;
+    padding: 10px 20px;
+    background-color: #6E320A;
+    color: #EFBF04;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.error_page_button_2{
+    margin-top: 3rem;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #6E320A;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
