@@ -153,7 +153,7 @@ function Book() {
       setError(null); // Reset error when switching chapters
       // Make GET request to fetch data
       axios
-          .get(`/book/${book_id}`, {
+          .get(`${process.env.REACT_APP_API_URL}/book/${book_id}`, {
             signal: controller.signal // Attach the signal to axios
           })
           .then((response) => {

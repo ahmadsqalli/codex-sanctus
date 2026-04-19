@@ -30,7 +30,7 @@ const Library = () => {
     useEffect(() => {
         // Make GET request to fetch data
         axios
-            .get("/library")
+            .get(`${process.env.REACT_APP_API_URL}/library`)
             .then((response) => {
                 setData(response.data.data);
                 setLoading(false);

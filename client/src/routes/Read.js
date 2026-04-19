@@ -25,7 +25,7 @@ function Read() {
       setError(null); // Reset error when switching chapters
       // Make GET request to fetch data
       axios
-          .get(`/read/${book_id}/node/${node_id}/${read_param}`, {
+          .get(`${process.env.REACT_APP_API_URL}/read/${book_id}/node/${node_id}/${read_param}`, {
             signal: controller.signal // Attach the signal to axios
           })
           .then((response) => {
