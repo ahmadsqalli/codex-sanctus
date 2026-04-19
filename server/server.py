@@ -13,6 +13,9 @@ conn.row_factory = sql_dict_factory
 
 origins = [
     "http://localhost:3000", # React development server
+    "https://codex-sanctus.vercel.app",
+    "https://codexsanctus.com",
+    "https://www.codexsanctus.com",
 ]
 
 app.add_middleware(
